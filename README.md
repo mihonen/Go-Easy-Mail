@@ -9,12 +9,12 @@ Welcome to the documentation for **Go Easy Mail**, a simple and efficient email 
 For security and customization, the application uses environment variables to handle sensitive information and user-specific settings. You should create a .env file in the root directory of your application with the following variables:
 
 
-`
-EMAIL_ADDRESS=sender@email.com  
-EMAIL_PW=password  
-EMAIL_SENDER_NAME=Sender  
-EMAIL_SUBJECT=Hello  
-`
+```
+EMAIL_ADDRESS=sender@email.com 
+EMAIL_PW=password 
+EMAIL_SENDER_NAME=Sender 
+EMAIL_SUBJECT=Hello 
+```
 
 
 ### Host
@@ -27,7 +27,7 @@ You can change the host name in mail/send.go, defaults to zoho.mail.eu
 
 Run the application in input mode to manually enter email addresses interactively. In this mode, you can type each email address and press `Enter` to send an email immediately.
 
-`bash
+`
 go run main.go
 `
 
@@ -37,7 +37,7 @@ Simply start the application with the above command, enter an email address, and
 
 To send emails from a predefined list, use the `-f` flag. The application expects a CSV file named `emails.csv` containing one email address per line.
 
-`bash
+`
 go run main.go -f
 `
 
@@ -47,7 +47,7 @@ Make sure that the `emails.csv` file is located in the same directory as your ap
 
 To adjust the number of concurrent workers that handle sending emails, use the `-workers` flag followed by the number you wish to use.
 
-`bash
+`
 go run main.go -workers 10
 `
 
