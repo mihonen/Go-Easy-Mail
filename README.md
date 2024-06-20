@@ -9,12 +9,13 @@ Welcome to the documentation for **Go Easy Mail**, a simple and efficient email 
 For security and customization, the application uses environment variables to handle sensitive information and user-specific settings. You should create a .env file in the root directory of your application with the following variables:
 
 
-# .env file content
+`
 EMAIL_ADDRESS=sender@email.com
 EMAIL_PW=password
 EMAIL_SENDER_NAME=Sender
 EMAIL_SUBJECT=Hello
-
+`
+`
 ### Host
 You can change the host name in mail/send.go, defaults to zoho.mail.eu
 
