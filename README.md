@@ -10,12 +10,13 @@ For security and customization, the application uses environment variables to ha
 
 
 `
-EMAIL_ADDRESS=sender@email.com
-EMAIL_PW=password
-EMAIL_SENDER_NAME=Sender
-EMAIL_SUBJECT=Hello
+EMAIL_ADDRESS=sender@email.com  
+EMAIL_PW=password  
+EMAIL_SENDER_NAME=Sender  
+EMAIL_SUBJECT=Hello  
 `
-`
+
+
 ### Host
 You can change the host name in mail/send.go, defaults to zoho.mail.eu
 
